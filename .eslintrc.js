@@ -63,6 +63,10 @@ module.exports = {
     'react/prop-types': 'error',
   },
   settings: {
-    'import/resolver': 'babel-plugin-root-import',
+    'import/resolver': {
+      'babel-plugin-root-import': {
+        rootPathSuffix: 'src',
+      },
+    },
   },
 };
